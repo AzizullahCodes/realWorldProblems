@@ -53,10 +53,39 @@ console.log(obj)
 
 let { designation,...rest} = obj;
 console.log(rest) */
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 4 =========================================
+make button disabled until input fields are empty
 ======================================= Answer =====================================*/
+/* let name = document.getElementById('name');
+let email = document.getElementById('email');
+let password = document.getElementById('password');
+let button = document.getElementById('button');
+// keep btn disabled
+button.disabled = true;
 
+function checkInputs(){
+    if(name.value && email.value && password.value){
+        button.disabled = false
+    }
+    else{
+        button.disabled = true
+    }
+}
+
+name.addEventListener('input',checkInputs);
+email.addEventListener('input',checkInputs);
+password.addEventListener('input',checkInputs);
+
+button.addEventListener('click',function(){
+    let obj = {
+        name : name.value,
+        email : email.value,
+        password : password.value
+    }
+    console.log(obj)
+})
+
+ */
 
 
 
