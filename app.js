@@ -92,11 +92,44 @@ button.addEventListener('click',function(){
 
 
 
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 5 =========================================
+time remaining till specific date from today 
 ======================================= Answer =====================================*/
-
-
+/* const targetDate = new Date('February 28, 2026 00:00:00');
+    const targetDateInMilliseconds = targetDate.getTime();
+    let show = document.getElementById('heading');
+    let update;
+    // console.log(targetDateInMilliseconds)
+    function updateTimer(){
+        const now = new Date().getTime();
+        // console.log(now)
+        const difference = targetDateInMilliseconds - now;
+        // console.log(difference)
+        if(difference <=0){
+            // console.log('time is up')
+            show.innerHTML = 'time is up'
+            clearInterval(update)
+            return
+        }
+         let seconds = Math.floor(
+        (difference % (1000 * 60)) / 1000
+    );
+        // console.log('seconds ',seconds);
+        let minutes = Math.floor(
+        (difference % (1000 * 60 * 60)) / (1000 * 60)
+    );
+        // console.log('minutes ',minutes);
+        let hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+        // console.log('hours ',hours);
+         let days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        // console.log('days ',days)
+        show.innerHTML = `${days} days : ${hours} hours: ${minutes} minutes: ${seconds} seconds`
+    }
+    updateTimer()
+     update = setInterval((updateTimer),1000);
+ */
 
 
 
