@@ -1,4 +1,51 @@
 // Real world problems
+// note import interview problems
+
+/* 📌 𝟎𝟏. 𝐀𝐫𝐫𝐚𝐲 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+• Find the largest & second largest element
+• Reverse an array
+• Check if array is sorted
+• Remove duplicates (sorted array)
+• Rotate array by K positions
+• Move all zeros to end
+• Linear Search & Binary Search
+• Find missing number (1 to N)
+• Find duplicate number
+• Two Sum problem
+• Maximum Subarray Sum (Kadane’s Algorithm)
+• Majority Element
+• Fibonacci Series
+• Flatten Array
+• Factorial Number
+• Prime Number
+• Max consecutive 1’s
+• Find Unique Element
+• Sort the Array
+
+📌 𝟎𝟐. 𝐒𝐭𝐫𝐢𝐧𝐠 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+• Reverse a string
+• Palindrome check
+• Anagram check
+• First non-repeating character
+• Count vowels & consonants
+• Remove duplicates
+• Count frequency of characters
+• Word-wise reverse
+• Sum of digits in string
+• Uppercase ↔ Lowercase conversion
+• All Substrings
+• Longest substring without repeating characters
+• Longest palindromic substring
+• Valid Parentheses
+• String compression
+• Smallest word in sentence
+
+📌 𝟎𝟑. 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭 (𝐀𝐬𝐲𝐧𝐜 𝐂𝐨𝐧𝐜𝐞𝐩𝐭𝐬)
+• Callback → Promise
+• Promise → Async/Await
+• Convert Callback Hell → Promise
+• Promise chaining → Async/Await
+ */
 
 /*==================================== Question No 1 =========================================
 show/hide password on checkbox click 
@@ -133,38 +180,89 @@ time remaining till specific date from today
 
 
 
+/*==================================== Question No 6 =========================================
+largest and secondLargest in array by for loop
+======================================= Answer =====================================*/
+/* let arr = [10, 45, 2, 99, 23, 99, 5];
+let largest = arr[0]
+let secondLargest = arr[0]
+for(let i = 0;i < arr.length;i++){
+    if(arr[i] > largest){
+        largest = arr[i]
+    }
+    
+}
+// second for loop for find secondLargest
+
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > secondLargest && arr[i] < largest) {
+        secondLargest = arr[i];
+    }
+}
+console.log(largest)
+console.log(secondLargest) */
+
+
+
+
+/*==================================== Question No 7 =========================================
+reverse an array
+======================================= Answer =====================================*/
+/* let arr = [1, 2, 3, 4, 5];
+let reverse = [];
+for(let i = arr.length - 1;i >=0;i--){
+    // console.log(arr[i])
+    reverse.push(arr[i])
+}
+
+console.log(reverse) */
+
+// no 2
+
+/* let arr = ['apple','grapes','orange','guava'];
+let reverse = [];
+for(let i = arr.length-1 ; i >= 0;i--){
+    // console.log(arr[i])
+    reverse.push(arr[i])
+}
+console.log(reverse) */
+
+/*==================================== Question No 8 =========================================
+check if array is sorted or not  (for ascending order checking)
+sorted mean arry is in ascending order or descending order 
+like arr = [1,2,3,4,5] 
+it is sorted array
+======================================= Answer =====================================*/
+/* let arr = [4,5,1,6,8,9];
+let isSorted = true;
+for(let i = 0; i < arr.length;i++){
+    // console.log(arr[i])
+    if(arr[i] > arr[i + 1]){
+        isSorted =false;
+        break
+    }
+}
+
+if(isSorted){
+    console.log('array is sorted')
+}
+else{
+    console.log('array is not sorted')
+}
+
+ */
+
 /*==================================== Question No 1 =========================================
 
 ======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
-======================================= Answer =====================================*/
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
+let arr = [5,4,3,2];
+let isSorted = true;
+for(let i = 0;i < arr.length;i++){
+    if(arr[i] < arr[i + 1]){
+        isSorted =false;
+        break
+    }
+}
 
 
 /*==================================== Question No 1 =========================================
